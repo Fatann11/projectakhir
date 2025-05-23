@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+
+
+
+    <GridLayout
+        android:id="@+id/albumGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.785">
+
+        <!-- isi album tetap seperti sebelumnya -->
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/albumSquare1"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/batik" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Batik Day"
+                android:textColor="#1234F0"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Album 2 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/albumSquare2"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/bukber" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Bukber"
+                android:textColor="#1234F0"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/albumSquare3"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/aib" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Togetherness"
+                android:textColor="#1234F0"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Album 4 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/albumSquare4"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/islamic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Islamic Event"
+                android:textColor="#1234F0"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
